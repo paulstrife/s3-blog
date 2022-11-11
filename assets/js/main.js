@@ -15,7 +15,6 @@ const showArticles = function() {
 				    html      = converter.makeHtml(text);
 
 				article.append(html)
-
 				$("#articles").append(article)
 			}
 	})}
@@ -28,12 +27,12 @@ const addPagination = function() {
 	for (let i = 1; i <= pages; i++){
 		page_selector.append("<a href=\"#\">" + i + "</a>")
 	}
-	$("#articles").append(page_selector)
+	$(".center").empty()
+	$(".center").append(page_selector)
 	
 	$(".pagination").click(function(d){
-	current_page = d.target.text - 1
-	showArticles()
-	console.log(current_page)
+		current_page = d.target.text - 1
+		showArticles()
 	})
 }
 
