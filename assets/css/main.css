@@ -57,134 +57,20 @@ body {
 	text-align: right;
 }
 
-.map {
-	height: 700px;
+.pagination {
+  display: inline-block;
 }
 
-.canton {
-  fill: none;
-  stroke: #000;
-  stroke-width: 1;
-}
- 
-.municipality {
-  fill: #ccc;
-  stroke: #555;
-  stroke-width: .3;
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
-.municipality:hover {
-  stroke: black;
-  stroke-width: 1;
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.lakes {
-  fill: skyblue;
-  stroke: #555; 
-}
-
-.styled-table {
-    border-collapse: collapse;
-    margin-top: 25px;
-    font-size: 0.9em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.styled-table thead tr {
-    background-color: rgb(77, 175, 98);
-    color: #ffffff;
-    text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-	padding: 8px 10px 8px 10px;
-}
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-    font-family: Lato-Light;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid rgb(77, 175, 98);
-}
-
-.styled-table tbody>tr>:nth-child(1) {
-	width: 6%;
-}
-
-.styled-table tbody>tr>:nth-child(2) {
-	width: 44%;
-}
-
-.styled-table tbody>tr>:nth-child(3) {
-	width: 12%;
-}
-
-.styled-table tbody>tr>:nth-child(4) {
-	width: 20%;
-}
-
-.styled-table tbody>tr>:nth-child(5) {
-	width: 16%;
-}
-
-.left-table {
-	width: 49%;
-	float: left;
-}
-
-.right-table {
-	width: 49%;
-	float: right;
-}
-
-.input {
-	position: absolute;
-	float: left;
-	width: 250px;
-	text-align:left;
-	border:solid gray;
-	border-radius: 5px;
-	padding: 3px;
-	color: white;
-	background: rgba(0,0,0,.4);
-	margin-block-end: 0;
-	
-}
-
-.input button {
-	border: 1px solid black;
-	border-radius: 8px;
-	background-color: white;
-}
-
-.taxableIncome {
-	border:  1px;
-	border-radius: 5px;
-	width: 90px;
-}
-
-.tooltip {
-	position: absolute;
-	float: left;
-	top: 8em;
-	width: 250px;
-	height: 160px;
-	text-align:left;
-	border:solid gray;
-	border-radius: 5px;
-	padding: 3px;
-	color: white;
-	background: rgba(0,0,0,.4);
-}
-
-.disclaimer {
-	width: 100%;
-	text-align: center;
-}
+.pagination a:hover:not(.active) {background-color: #ddd;}
